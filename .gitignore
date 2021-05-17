@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+/rapidxml-1.13/*.html
+/rapidxml-1.13/*.txt
+*.csv
+*.ods
+*.xml
+*.db
+*.opendb
+config*.cpp
