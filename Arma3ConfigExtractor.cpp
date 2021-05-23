@@ -60,8 +60,10 @@ int main(int argc, char *argv[])
 {
     string configFileName;
     string stringTableName("");
+    string outputName("output");
     if (argc >= 2) configFileName  = argv[1];
     if (argc >= 3) stringTableName = argv[2];
+    if (argc >= 4) outputName = argv[3];
 
     // æ‚Éstringtable‚ğ‰ğÍ
     map<string, string> stringTableMap;
@@ -212,7 +214,7 @@ stringTableMap["$" + key] = node->first_node()->value();
     //    }
     //}
 
-    ofstream csv("output.csv");
+    ofstream csv(outputName + ".csv");
     for each (auto item in classConfigMap)
     {
         if (item.second.find("displayName") != item.second.end() && item.second.find("picture") != item.second.end())

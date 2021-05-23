@@ -1,0 +1,67 @@
+DBデータ追加簡易手順
+
+1. MOD.pboを解凍
+   PBOConsole.exe等で解凍
+
+
+2. config.binの解析
+   Arma3ConfigExtractor.exeにて必要情報の成形が可能。（まだ基本情報、クラス名、アイコンパス抽出のみ。Weaponマガジン情報などの抽出は未実装）
+
+   Arma3ConfigExtractor.exeのダウンロードURL
+   https://github.com/NYdevelop/Arma3ConfigExtractor/releases/download/v1.0/Arma3ConfigExtractor.exe
+
+
+3. アイコン画像の抽出
+   手順2で出力されるoutput.csvからアイコンpaaファイルパスを確認する。
+   paaファイルが確認出来たら、TexView.exeやPal2PacE.exeよりpngに変換する。バッチがあるため利用を推奨。
+
+
+4. アイコンのアップロード
+   手順3で変換したpng画像群を指定の場所にフォルダ命名規則に沿ってアップロードする。
+
+   現在は下記。
+   towaのGoogle Driveアイコン置き場
+   https://drive.google.com/drive/folders/1KOZTjyM0jJsMrIYJhUwYjZdSEKw0kLPX?usp=sharing
+
+   （将来的にはC.A.M.P.のアカウントの方がよいかも？）
+
+   フォルダ命名規則(全て小文字）
+     img/(MOD名)/(装備部位)/各種画像.png
+       装備部位は「weapon」「magazine」「headgear」「uniform」「vest」「backpack」
+
+     例：img/rhsusaf/weapon/rhs_weap_m16a4_ca.png
+
+
+5. スプレッドシートへのデータ追加
+   手順2で出力されるoutput.csvから、適宜列をコピー＆ペーストでスプレッドシートに記載。
+   アイコン画像パスは、アップロードしたファイルパスを記載。
+     スプレッドシート上でアイコンが表示されれば、適切に設定できている。
+    （アップロード後すぐに確認できないことがあるため、気長にやってみて）
+
+   スプレッドシートURL
+   https://docs.google.com/spreadsheets/d/1sQhmyIhP9dvwhZePrRyWxKMjDVFRrjHdlwUuSc-W-c8/edit#gid=1127464666
+
+   適宜対応するシートに追加すること。
+
+以上
+
+
+
+
+データ確認ページ
+
+  DBデータ確認Webページ
+  https://nzaclubtkdc3zw3honjjuq-on.drv.tw/C.A.M.P./page/GAS_search_ver01.html
+
+  データ確認その2
+  https://nzaclubtkdc3zw3honjjuq-on.drv.tw/C.A.M.P./page/GAS_view_ver0.html
+    データ整理、更新を行うため、取得に時間がかかる(最大10秒程度）
+
+
+
+
+
+以下、メモ書き
+  https://script.google.com/macros/s/AKfycbz74JR_2qrRmzachiITYm8EHYRHqjPNj2GONZ3aFKtARgnMx08/exec?callback=apicallback&sheet=Uniform&query=%60Army%60%20%3D%20%27%27&_=1621213053323
+  
+  https://script.google.com/macros/s/AKfycbzh9MZj65_LNSjEZ-RQsZTy1L5fUv_AxWbI_izzTt2esBU9Gns5/exec?callback=apicallback&_=1621213337469

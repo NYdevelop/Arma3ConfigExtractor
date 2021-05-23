@@ -38,3 +38,7 @@
 *.db
 *.opendb
 config*.cpp
+/Debug
+/Release
+/.vs
+*.lnk
